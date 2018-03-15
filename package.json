@@ -1,0 +1,17 @@
+{
+  "name": "ocr_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "oliver boudet",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "discord.js": "github:hydrabolt/discord.js",
+    "jimp": "^0.2.28",
+    "ocr-space-api": "^1.0.1",
+    "request": "^2.83.0"
+  }
+}
