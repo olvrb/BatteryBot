@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# config file
+*.json
+
+# downloads file
+downloads/
