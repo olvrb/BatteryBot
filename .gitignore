@@ -58,7 +58,7 @@ typings/
 .env
 
 # config file
-*.json
+config.json
 
 # downloads file
 downloads/
