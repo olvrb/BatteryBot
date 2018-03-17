@@ -25,7 +25,7 @@ client.on("message", async message => {
     request(url).pipe(writeFile).on('close', async function () {
         console.log(url, 'saved to', filename)
         
-        Jimp.read(filename, function (err, image) {
+        Jimp.read("./downloads/" + filename, function (err, image) {
             if (err) throw err;
             image.crop(946, 13, 282, 59)
                 .write("./downloads/" + filename); // save 
