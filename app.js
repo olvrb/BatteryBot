@@ -34,6 +34,9 @@ client.on("message", async message => {
             ocrSpaceApi.parseImageFromLocalFile(`./downloads/${filename}`, options).then(resp => {
                 console.log(resp.parsedText.trim().replace("%", "").replace(/\D/g,''));
                 let batt;
+                if (resp.parsedText.trim().includes(":")) {
+                    return;
+                }
                 try {
                     batt = parseInt(resp.parsedText.trim().replace("%", "").replace(/\D/g,''));
                 } catch (error) {
